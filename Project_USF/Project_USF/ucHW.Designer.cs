@@ -1,7 +1,7 @@
 ﻿
 namespace Project_USF
 {
-    partial class ucHW
+    partial class ucWH
     {
         /// <summary> 
         /// Required designer variable.

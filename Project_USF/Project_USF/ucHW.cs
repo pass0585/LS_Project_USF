@@ -11,20 +11,20 @@ using System.Windows.Forms;
 
 namespace Project_USF
 {
-    public partial class ucHW : DevExpress.XtraEditors.XtraUserControl
+    public partial class ucWH : DevExpress.XtraEditors.XtraUserControl
     {
-        private static ucHW _instance;
+        private static ucWH _instance;
 
-        public static ucHW Instance
+        public static ucWH Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new ucHW();
+                    _instance = new ucWH();
                 return _instance;
             }
         }
-        public ucHW()
+        public ucWH()
         {
             InitializeComponent();
         }

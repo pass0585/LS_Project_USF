@@ -42,13 +42,13 @@ namespace Project_USF
 
         private void aceWH_Click(object sender, EventArgs e)
         {
-            if (!container.Controls.Contains(ucHW.Instance))
+            if (!container.Controls.Contains(ucWH.Instance))
             {
-                container.Controls.Add(ucHW.Instance);
-                ucHW.Instance.Dock = DockStyle.Fill;
-                ucHW.Instance.BringToFront();
+                container.Controls.Add(ucWH.Instance);
+                ucWH.Instance.Dock = DockStyle.Fill;
+                ucWH.Instance.BringToFront();
             }
-            ucHW.Instance.BringToFront();
+            ucWH.Instance.BringToFront();
         }
 
         private void USFMain_Load(object sender, EventArgs e)
