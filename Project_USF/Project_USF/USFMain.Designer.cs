@@ -107,6 +107,7 @@ namespace Project_USF
             this.fluentDesignFormControl1.Size = new System.Drawing.Size(798, 31);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
+            this.fluentDesignFormControl1.Text = "USF";
             // 
             // USFMain
             // 
@@ -120,7 +121,7 @@ namespace Project_USF
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.Name = "USFMain";
             this.NavigationControl = this.accordionControl1;
-            this.Text = "USFMain";
+            this.Text = "USF";
             this.Load += new System.EventHandler(this.USFMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();

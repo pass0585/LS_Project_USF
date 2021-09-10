@@ -43,10 +43,12 @@ namespace Project_USF
             // 
             // labelControl2
             // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 20F);
+            this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl2.Location = new System.Drawing.Point(0, 247);
+            this.labelControl2.Location = new System.Drawing.Point(0, 228);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(44, 14);
+            this.labelControl2.Size = new System.Drawing.Size(96, 33);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "천재 상우";
             // 
