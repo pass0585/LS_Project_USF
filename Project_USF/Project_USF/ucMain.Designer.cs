@@ -166,6 +166,7 @@ namespace Project_USF
             this.Controls.Add(this.scParent);
             this.Name = "ucMain";
             this.Size = new System.Drawing.Size(704, 459);
+            this.Load += new System.EventHandler(this.ucMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.scParent.Panel1)).EndInit();
             this.scParent.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.scParent.Panel2)).EndInit();

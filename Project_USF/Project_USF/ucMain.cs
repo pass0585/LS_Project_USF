@@ -29,5 +29,18 @@ namespace Project_USF
         {
             InitializeComponent();
         }
+
+        private void ucMain_Load(object sender, EventArgs e)
+        {
+            this.scChild1.Panel1.Controls.Add(test.Instance);
+            test.Instance.Size = scChild1.Panel1.Size;
+            test.Instance.Dock = DockStyle.Fill;
+            test.Instance.BringToFront();
+
+            this.scChild2.Panel2.Controls.Add(test2.Instance);
+            test2.Instance.Size = scChild2.Panel2.Size;
+            test2.Instance.Dock = DockStyle.Fill;
+            test2.Instance.BringToFront();
+        }
     }
 }
