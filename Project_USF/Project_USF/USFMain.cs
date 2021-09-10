@@ -51,7 +51,7 @@ namespace Project_USF
             ucHW.Instance.BringToFront();
         }
 
-        private void accordionControl1_Click(object sender, EventArgs e)
+        private void USFMain_Load(object sender, EventArgs e)
         {
 
         }

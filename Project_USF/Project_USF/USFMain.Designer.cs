@@ -34,8 +34,8 @@ namespace Project_USF
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.aceMain = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.aceInsp = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.aceWH = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.aceInsp = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -60,14 +60,13 @@ namespace Project_USF
             this.accordionControl1.Size = new System.Drawing.Size(140, 588);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
-            this.accordionControl1.Click += new System.EventHandler(this.accordionControl1_Click);
             // 
             // accordionControlElement1
             // 
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.aceMain,
-            this.aceInsp,
-            this.aceWH});
+            this.aceWH,
+            this.aceInsp});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "USF";
@@ -80,19 +79,19 @@ namespace Project_USF
             this.aceMain.Text = "메인";
             this.aceMain.Click += new System.EventHandler(this.aceMain_Click);
             // 
-            // aceInsp
-            // 
-            this.aceInsp.Name = "aceInsp";
-            this.aceInsp.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.aceInsp.Text = "검사";
-            this.aceInsp.Click += new System.EventHandler(this.aceInsp_Click);
-            // 
             // aceWH
             // 
             this.aceWH.Name = "aceWH";
             this.aceWH.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.aceWH.Text = "창고";
             this.aceWH.Click += new System.EventHandler(this.aceWH_Click);
+            // 
+            // aceInsp
+            // 
+            this.aceInsp.Name = "aceInsp";
+            this.aceInsp.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.aceInsp.Text = "검사";
+            this.aceInsp.Click += new System.EventHandler(this.aceInsp_Click);
             // 
             // fluentDesignFormControl1
             // 
@@ -116,6 +115,7 @@ namespace Project_USF
             this.Name = "USFMain";
             this.NavigationControl = this.accordionControl1;
             this.Text = "USFMain";
+            this.Load += new System.EventHandler(this.USFMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             this.ResumeLayout(false);
