@@ -17,7 +17,7 @@ namespace Project_USF
         {
             InitializeComponent();
         }
-
+        // 메인 탭
         private void aceMain_Click(object sender, EventArgs e)
         {
             if(!container.Controls.Contains(ucMain.Instance))
@@ -28,7 +28,7 @@ namespace Project_USF
             }
             ucMain.Instance.BringToFront();
         }
-
+        // 검사 탭
         private void aceInsp_Click(object sender, EventArgs e)
         {
             if (!container.Controls.Contains(ucINSP.Instance))
@@ -39,7 +39,7 @@ namespace Project_USF
             }
             ucINSP.Instance.BringToFront();
         }
-
+        // 창고 탭
         private void aceWH_Click(object sender, EventArgs e)
         {
             if (!container.Controls.Contains(ucWH.Instance))
@@ -53,7 +53,10 @@ namespace Project_USF
 
         private void USFMain_Load(object sender, EventArgs e)
         {
-
+            // 시작시 메인화면 띄우기
+            container.Controls.Add(ucINSP.Instance);
+            ucINSP.Instance.Dock = DockStyle.Fill;
+            ucINSP.Instance.BringToFront();
         }
     }
 }
