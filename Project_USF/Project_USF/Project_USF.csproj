@@ -91,6 +91,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ucMain.resx">
+      <DependentUpon>ucMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="USFMain.resx">
       <DependentUpon>USFMain.cs</DependentUpon>
     </EmbeddedResource>
