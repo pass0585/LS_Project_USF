@@ -59,6 +59,5 @@ namespace Project_USF
             ucMain.Instance.Dock = DockStyle.Fill;
             ucMain.Instance.BringToFront();
         }
-
     }
 }

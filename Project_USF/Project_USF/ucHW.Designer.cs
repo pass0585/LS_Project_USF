@@ -29,8 +29,16 @@ namespace Project_USF
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ucWH
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "ucWH";
+            this.Size = new System.Drawing.Size(650, 500);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

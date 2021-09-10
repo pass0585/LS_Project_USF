@@ -44,10 +44,12 @@ namespace Project_USF
             // 
             // container
             // 
-            this.container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.container.Location = new System.Drawing.Point(140, 31);
+            this.container.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.container.Location = new System.Drawing.Point(150, 31);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(1046, 591);
+            this.container.Size = new System.Drawing.Size(648, 468);
             this.container.TabIndex = 0;
             // 
             // accordionControl1
@@ -58,7 +60,7 @@ namespace Project_USF
             this.accordionControl1.Location = new System.Drawing.Point(0, 31);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(140, 591);
+            this.accordionControl1.Size = new System.Drawing.Size(150, 468);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -102,7 +104,7 @@ namespace Project_USF
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1186, 31);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(798, 31);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
@@ -110,7 +112,7 @@ namespace Project_USF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1186, 622);
+            this.ClientSize = new System.Drawing.Size(798, 499);
             this.ControlContainer = this.container;
             this.Controls.Add(this.container);
             this.Controls.Add(this.accordionControl1);
