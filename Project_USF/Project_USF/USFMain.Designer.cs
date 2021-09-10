@@ -30,6 +30,7 @@ namespace Project_USF
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(USFMain));
             this.container = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -46,7 +47,7 @@ namespace Project_USF
             this.container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.container.Location = new System.Drawing.Point(140, 31);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(768, 588);
+            this.container.Size = new System.Drawing.Size(1046, 591);
             this.container.TabIndex = 0;
             // 
             // accordionControl1
@@ -57,7 +58,7 @@ namespace Project_USF
             this.accordionControl1.Location = new System.Drawing.Point(0, 31);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(140, 588);
+            this.accordionControl1.Size = new System.Drawing.Size(140, 591);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -74,6 +75,7 @@ namespace Project_USF
             // aceMain
             // 
             this.aceMain.Expanded = true;
+            this.aceMain.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("aceMain.ImageOptions.SvgImage")));
             this.aceMain.Name = "aceMain";
             this.aceMain.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.aceMain.Text = "메인";
@@ -81,6 +83,7 @@ namespace Project_USF
             // 
             // aceWH
             // 
+            this.aceWH.ImageOptions.SvgImage = global::Project_USF.Properties.Resources.bo_order;
             this.aceWH.Name = "aceWH";
             this.aceWH.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.aceWH.Text = "창고";
@@ -88,6 +91,7 @@ namespace Project_USF
             // 
             // aceInsp
             // 
+            this.aceInsp.ImageOptions.SvgImage = global::Project_USF.Properties.Resources.bo_document;
             this.aceInsp.Name = "aceInsp";
             this.aceInsp.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.aceInsp.Text = "검사";
@@ -98,7 +102,7 @@ namespace Project_USF
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(908, 31);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1186, 31);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
@@ -106,7 +110,7 @@ namespace Project_USF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(908, 619);
+            this.ClientSize = new System.Drawing.Size(1186, 622);
             this.ControlContainer = this.container;
             this.Controls.Add(this.container);
             this.Controls.Add(this.accordionControl1);
